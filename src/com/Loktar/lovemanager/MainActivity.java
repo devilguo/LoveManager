@@ -1,5 +1,7 @@
 package com.Loktar.lovemanager;
 
+import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
+
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -11,15 +13,17 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-public class MainActivity extends FragmentActivity implements OnGestureListener {
+public class MainActivity extends FragmentActivity{
 	
 	public static Fragment[] fragments;
 	public static LinearLayout[] linearLayouts;
 	public static TextView[] fragTexts;
 	
-	public static GestureDetector detector;
+	
 	public int MARK = 0;
 	public static final int DISTANT = 50;
+	SlidingMenu slidingMenu;
+	
 	
 	@SuppressWarnings("deprecation")
 	@Override
@@ -33,7 +37,6 @@ public class MainActivity extends FragmentActivity implements OnGestureListener 
 		initViews();
 		addevents();
 		
-		detector = new GestureDetector(this);
 	}
 
 	private void initFragment() {
@@ -64,6 +67,18 @@ public class MainActivity extends FragmentActivity implements OnGestureListener 
 		fragTexts[3] = (TextView) findViewById(R.id.sharetext);
 		
 		fragTexts[0].setTextColor(getResources().getColor(R.color.lightseagreen));
+		
+		slidingMenu = new SlidingMenu(this);
+		slidingMenu.setMode(SlidingMenu.LEFT);
+		
+		slidingMenu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
+		//slidingMenu.setShadowWidthRes(R.dimen.shade_width);
+		slidingMenu.setFadeDegree(0.35f);
+		slidingMenu.setBehindOffsetRes(R.dimen.slidingmenu_offset);
+		slidingMenu.attachToActivity(this, SlidingMenu.SLIDING_CONTENT);
+		
+		slidingMenu.setMenu(R.layout.settingmenu);
+		
 		
 	}
 
@@ -117,119 +132,7 @@ public class MainActivity extends FragmentActivity implements OnGestureListener 
 		}
 	}
 	
-	@Override
-	public boolean onTouchEvent(MotionEvent event){
-		
-		return detector.onTouchEvent(event);
-	}
-	
 
-	@Override
-	public boolean onDown(MotionEvent arg0) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public boolean onFling(MotionEvent arg0, MotionEvent arg1, float arg2,
-			float arg3) {
-		// TODO Auto-generated method stub
-		
-		resetTabfootBg();
-		
-		if (0 == MARK){
-			if (arg1.getX()>arg0.getX()+DISTANT){
-				getSupportFragmentManager().beginTransaction().hide(fragments[0]).hide(fragments[1])
-				.hide(fragments[2]).hide(fragments[3]).show(fragments[1]).commit();
-				fragTexts[1].setTextColor(getResources().getColor(R.color.lightseagreen));
-				MARK=1;
-			}
-			else{
-				fragTexts[0].setTextColor(getResources().getColor(R.color.lightseagreen));
-			}
-		}
-		else if (1 == MARK){
-			if(arg1.getX()>arg0.getX()+DISTANT){
-				getSupportFragmentManager().beginTransaction().hide(fragments[0]).hide(fragments[1])
-				.hide(fragments[2]).hide(fragments[3]).show(fragments[2]).commit();
-				fragTexts[2].setTextColor(getResources().getColor(R.color.lightseagreen));
-				MARK=2;
-			}
-			else if (arg0.getX()>arg1.getX()+DISTANT){
-				getSupportFragmentManager().beginTransaction().hide(fragments[0]).hide(fragments[1])
-				.hide(fragments[2]).hide(fragments[3]).show(fragments[0]).commit();
-				fragTexts[0].setTextColor(getResources().getColor(R.color.lightseagreen));
-				MARK=0;
-			}
-			else {
-				fragTexts[1].setTextColor(getResources().getColor(R.color.lightseagreen));
-				MARK=1;
-			}
-		}
-		else if (2 == MARK){
-			if(arg1.getX()>arg0.getX()+DISTANT){
-				getSupportFragmentManager().beginTransaction().hide(fragments[0]).hide(fragments[1])
-				.hide(fragments[2]).hide(fragments[3]).show(fragments[3]).commit();
-				fragTexts[3].setTextColor(getResources().getColor(R.color.lightseagreen));
-				MARK=3;
-			}
-			else if (arg0.getX()>arg1.getX()+DISTANT){
-				getSupportFragmentManager().beginTransaction().hide(fragments[0]).hide(fragments[1])
-				.hide(fragments[2]).hide(fragments[3]).show(fragments[1]).commit();
-				fragTexts[1].setTextColor(getResources().getColor(R.color.lightseagreen));
-				MARK=1;
-			}
-			else {
-				fragTexts[2].setTextColor(getResources().getColor(R.color.lightseagreen));
-				MARK=2;
-			}
-		}
-		else if (3 == MARK){
-			if (arg0.getX()>arg1.getX()+DISTANT){
-				getSupportFragmentManager().beginTransaction().hide(fragments[0]).hide(fragments[1])
-				.hide(fragments[2]).hide(fragments[3]).show(fragments[2]).commit();
-				fragTexts[2].setTextColor(getResources().getColor(R.color.lightseagreen));
-				MARK=2;
-			}
-			else{
-				fragTexts[3].setTextColor(getResources().getColor(R.color.lightseagreen));
-				MARK = 3;
-			}
-		}
-		
-		
-		
-		return false;
-	}
-
-	@Override
-	public void onLongPress(MotionEvent arg0) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public boolean onScroll(MotionEvent arg0, MotionEvent arg1, float arg2,
-			float arg3) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public void onShowPress(MotionEvent arg0) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public boolean onSingleTapUp(MotionEvent arg0) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-	
-	
-	
-	
 	
 	
 	

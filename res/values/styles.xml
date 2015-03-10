@@ -16,5 +16,12 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
+    
+    <style name='Linearlayout_Style'>
+        <item name='android:orientation'>vertical</item>       
+        <item name='android:gravity'>center</item>
+        <item name='android:clickable'>true</item>
+        <item name='android:onClick'>LayoutOnclick</item>
+ </style>
 
 </resources>

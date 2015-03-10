@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources >
+    <color name='lightseagreen'>#20b2aa</color><!--亮海蓝色 --> 
+    <color name='black'>#000000</color><!-- 黑色 -->
+    <color name='white'>#ffffff</color><!-- 白色 -->
+</resources>

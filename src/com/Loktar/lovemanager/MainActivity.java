@@ -20,7 +20,7 @@ public class MainActivity extends FragmentActivity{
 	public static TextView[] fragTexts;
 	
 	
-	public int MARK = 0;
+	//public int MARK = 0;
 	public static final int DISTANT = 50;
 	SlidingMenu slidingMenu;
 	
@@ -49,6 +49,7 @@ public class MainActivity extends FragmentActivity{
 		
 		getSupportFragmentManager().beginTransaction().hide(fragments[0]).hide(fragments[1])
 				.hide(fragments[2]).hide(fragments[3]).show(fragments[0]).commit();
+		
 		
 	}
 
@@ -109,25 +110,25 @@ public class MainActivity extends FragmentActivity{
 			getSupportFragmentManager().beginTransaction().hide(fragments[0]).hide(fragments[1])
 			.hide(fragments[2]).hide(fragments[3]).show(fragments[0]).commit();
 			fragTexts[0].setTextColor(getResources().getColor(R.color.lightseagreen));
-			MARK=0;
+//			MARK=0;
 			break;
 		case R.id.lay2:
 			getSupportFragmentManager().beginTransaction().hide(fragments[0]).hide(fragments[1])
 			.hide(fragments[2]).hide(fragments[3]).show(fragments[1]).commit();
 			fragTexts[1].setTextColor(getResources().getColor(R.color.lightseagreen));
-			MARK=1;
+//			MARK=1;
 			break;
 		case R.id.lay3:
 			getSupportFragmentManager().beginTransaction().hide(fragments[0]).hide(fragments[1])
 			.hide(fragments[2]).hide(fragments[3]).show(fragments[2]).commit();
 			fragTexts[2].setTextColor(getResources().getColor(R.color.lightseagreen));
-			MARK = 2;
+//			MARK = 2;
 			break;
 		case R.id.lay4:
 			getSupportFragmentManager().beginTransaction().hide(fragments[0]).hide(fragments[1])
 			.hide(fragments[2]).hide(fragments[3]).show(fragments[3]).commit();
 			fragTexts[3].setTextColor(getResources().getColor(R.color.lightseagreen));
-			MARK = 3;
+//			MARK = 3;
 			break;
 		}
 	}

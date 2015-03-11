@@ -3,4 +3,5 @@
     <color name='lightseagreen'>#20b2aa</color><!--亮海蓝色 --> 
     <color name='black'>#000000</color><!-- 黑色 -->
     <color name='white'>#ffffff</color><!-- 白色 -->
+    <color name='titlecolor'>#5214f5</color><!-- 亮紫色-->
 </resources>

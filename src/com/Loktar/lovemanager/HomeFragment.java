@@ -18,6 +18,7 @@ public class HomeFragment extends Fragment {
 	public  View homeLayout;
 	
 	public ListView homeList;
+	
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,

@@ -142,6 +142,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
          */
         public static final int activity_horizontal_margin=0x7f060000;
         public static final int activity_vertical_margin=0x7f060001;
+        public static final int home_saying_content_size=0x7f060004;
         public static final int shade_width=0x7f060002;
         public static final int slidingmenu_offset=0x7f060003;
     }
@@ -158,51 +159,56 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int setting_mark=0x7f020009;
     }
     public static final class id {
-        public static final int action_settings=0x7f04001e;
-        public static final int datingfragment=0x7f040013;
-        public static final int datingtext=0x7f04001b;
-        public static final int detail_back_btn=0x7f04000d;
-        public static final int detail_camera_btn=0x7f04000f;
-        public static final int detail_name_tv=0x7f04000e;
-        public static final int detail_photo_layout=0x7f04000c;
+        public static final int action_settings=0x7f040021;
+        public static final int datingfragment=0x7f040016;
+        public static final int datingtext=0x7f04001e;
+        public static final int detail_back_btn=0x7f040010;
+        public static final int detail_camera_btn=0x7f040012;
+        public static final int detail_name_tv=0x7f040011;
+        public static final int detail_photo_layout=0x7f04000f;
         public static final int fullscreen=0x7f040003;
-        public static final int home_days_fragment=0x7f04000b;
-        public static final int home_listview=0x7f040010;
-        public static final int home_pucture_fragment=0x7f04000a;
-        public static final int home_state_fragment=0x7f040009;
-        public static final int homefragment=0x7f040011;
-        public static final int hometext=0x7f040017;
-        public static final int lay1=0x7f040016;
-        public static final int lay2=0x7f040018;
-        public static final int lay3=0x7f04001a;
-        public static final int lay4=0x7f04001c;
+        public static final int home_days_fragment=0x7f04000e;
+        public static final int home_listview=0x7f040013;
+        public static final int home_pucture_fragment=0x7f04000d;
+        public static final int home_saying_content_tv=0x7f040008;
+        public static final int home_saying_listview=0x7f040006;
+        public static final int home_saying_myhead_iv=0x7f040007;
+        public static final int home_state_fragment=0x7f04000c;
+        public static final int homefragment=0x7f040014;
+        public static final int hometext=0x7f04001a;
+        public static final int lay1=0x7f040019;
+        public static final int lay2=0x7f04001b;
+        public static final int lay3=0x7f04001d;
+        public static final int lay4=0x7f04001f;
         public static final int left=0x7f040000;
         public static final int margin=0x7f040002;
-        public static final int playfragment=0x7f040012;
-        public static final int playtext=0x7f040019;
+        public static final int playfragment=0x7f040015;
+        public static final int playtext=0x7f04001c;
         public static final int right=0x7f040001;
         public static final int selected_view=0x7f040004;
-        public static final int sharefragment=0x7f040014;
-        public static final int sharetext=0x7f04001d;
-        public static final int slidingmenumain=0x7f040015;
+        public static final int sharefragment=0x7f040017;
+        public static final int sharetext=0x7f040020;
+        public static final int slidingmenumain=0x7f040018;
         public static final int textView1=0x7f040005;
-        public static final int tv_home_days=0x7f040008;
-        public static final int tv_home_pictures=0x7f040007;
-        public static final int tv_home_state=0x7f040006;
+        public static final int tv_home_days=0x7f04000b;
+        public static final int tv_home_pictures=0x7f04000a;
+        public static final int tv_home_state=0x7f040009;
     }
     public static final class layout {
         public static final int datingfragment_layout=0x7f030000;
-        public static final int homefragment_content=0x7f030001;
-        public static final int homefragment_layout=0x7f030002;
-        public static final int homefragment_list=0x7f030003;
-        public static final int homefragment_titlebg=0x7f030004;
-        public static final int load_layout=0x7f030005;
-        public static final int main_layout=0x7f030006;
-        public static final int playfragment_layout=0x7f030007;
-        public static final int settingmenu=0x7f030008;
-        public static final int sharefragment_layout=0x7f030009;
-        public static final int slidingmenumain=0x7f03000a;
-        public static final int tabfoot=0x7f03000b;
+        public static final int home_saying_list=0x7f030001;
+        public static final int home_saying_list_item=0x7f030002;
+        public static final int homefragment_content=0x7f030003;
+        public static final int homefragment_layout=0x7f030004;
+        public static final int homefragment_list=0x7f030005;
+        public static final int homefragment_titlebg=0x7f030006;
+        public static final int load_layout=0x7f030007;
+        public static final int main_layout=0x7f030008;
+        public static final int playfragment_layout=0x7f030009;
+        public static final int settingmenu=0x7f03000a;
+        public static final int sharefragment_layout=0x7f03000b;
+        public static final int slidingmenumain=0x7f03000c;
+        public static final int tabfoot=0x7f03000d;
     }
     public static final class menu {
         public static final int load=0x7f090000;

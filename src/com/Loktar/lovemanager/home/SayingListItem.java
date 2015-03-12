@@ -4,9 +4,8 @@ public class SayingListItem {
 	public String content;
 	public String time;
 	
-	public SayingListItem(String conString){
-		this.content = conString;
-//		this.time = timeString;
+	public SayingListItem(){
+
 	}
 
 	public String getContent() {

@@ -11,7 +11,7 @@ import android.view.WindowManager;
 
 public class LoadActivity extends Activity {
 	
-	private static final int LOAD_DISPLAY_TIME = 1500;
+	private static final int LOAD_DISPLAY_TIME = 500;
 	
 
 	@SuppressWarnings("deprecation")

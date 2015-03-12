@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/detail_photo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/main"
+        android:maxHeight="200dp"
+        android:maxWidth="300dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp" >
+
+            <ImageView
+                 android:id="@+id/detail_back_btn"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                 android:layout_alignParentTop="true"
+                 android:adjustViewBounds="true"
+                 android:maxHeight="40dp"
+                 android:maxWidth="40dp"
+                 android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/detail_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:ems="8"
+                android:text="space"
+                android:gravity="center"
+                android:textColor="@color/lightseagreen"
+                android:textSize="20dp" />
+
+             <ImageView
+                 android:id="@+id/detail_camera_btn"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentRight="true"
+                 android:layout_alignParentTop="true"
+                 android:adjustViewBounds="true"
+                 android:maxHeight="70dp"
+                 android:maxWidth="70dp"
+                 android:src="@drawable/ic_launcher" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+    
+
+</LinearLayout>

@@ -14,8 +14,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 public class HomeFragment extends Fragment {
-//	public static Fragment[] sonFragment;
-//	public static TextView[] tv_titles;
+
 	public  View homeLayout;
 	
 	public ListView homeList;

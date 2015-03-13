@@ -39,7 +39,7 @@
                 android:ems="8"
                 android:text="space"
                 android:gravity="center"
-                android:textColor="@color/lightseagreen"
+                android:textColor="@color/coral"
                 android:textSize="20dp" />
 
              <ImageView

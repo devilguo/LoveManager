@@ -4,7 +4,6 @@ import java.util.List;
 
 import com.Loktar.lovemanager.R;
 
-import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;

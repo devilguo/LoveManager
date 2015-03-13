@@ -6,7 +6,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.PixelFormat;
 import android.view.Menu;
-import android.view.Window;
 import android.view.WindowManager;
 
 public class LoadActivity extends Activity {

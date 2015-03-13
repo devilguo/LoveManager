@@ -63,7 +63,7 @@
 	        android:layout_width='fill_parent'
 	        />
 	     <fragment
-	        android:name='com.Loktar.lovemanager.PlayFragment'
+	        android:name='com.Loktar.lovemanager.home.PictureFragment'
 	        android:id='@+id/home_pucture_fragment'
 	        android:layout_height='0dp'
 	        android:layout_weight='1.0'

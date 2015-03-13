@@ -5,10 +5,7 @@ import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
-import android.view.GestureDetector;
-import android.view.GestureDetector.OnGestureListener;
 import android.view.Menu;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -25,7 +22,6 @@ public class MainActivity extends FragmentActivity{
 	SlidingMenu slidingMenu;
 	
 	
-	@SuppressWarnings("deprecation")
 	@Override
 	protected void onCreate(Bundle arg0) {
 		// TODO Auto-generated method stub

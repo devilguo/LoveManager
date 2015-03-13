@@ -1,14 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/lightseagreen" >
+    android:background="@color/papayawhip" >
 
     <ListView
         android:id="@+id/home_saying_listview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="457dp"
+        android:layout_alignParentTop="true" >
+
     </ListView>
 
-</LinearLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/home_saying_listview" >
+
+        <EditText
+            android:id="@+id/home_saying_edit_ev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/home_saying_send_tv"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/home_saying_send_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="send"
+            android:textColor="@color/royalblue"
+            android:textSize="@dimen/home_edit_send_text" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,6 +1,5 @@
 package com.Loktar.lovemanager;
 
-import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -69,7 +68,7 @@ public class HomeListAdapter extends BaseAdapter {
 				tv_titles[1] = (TextView) convertView.findViewById(R.id.tv_home_pictures);
 				tv_titles[2] = (TextView) convertView.findViewById(R.id.tv_home_days);
 				
-				tv_titles[0].setTextColor(this.ctx.getResources().getColor(R.color.titlecolor));
+				tv_titles[0].setTextColor(this.ctx.getResources().getColor(R.color.palevioletred));
 				
 				OnClickListener titleLinstener = new OnClickListener() {
 					
@@ -80,17 +79,17 @@ public class HomeListAdapter extends BaseAdapter {
 						if (v.getId() == tv_titles[0].getId()){
 							ctx.getActivity().getSupportFragmentManager().beginTransaction().hide(sonFragment[0]).hide(sonFragment[1])
 							.hide(sonFragment[2]).show(sonFragment[0]).commit();
-							tv_titles[0].setTextColor(ctx.getResources().getColor(R.color.titlecolor));
+							tv_titles[0].setTextColor(ctx.getResources().getColor(R.color.palevioletred));
 						}
 						if (v.getId() == tv_titles[1].getId()){
 							ctx.getActivity().getSupportFragmentManager().beginTransaction().hide(sonFragment[0]).hide(sonFragment[1])
 							.hide(sonFragment[2]).show(sonFragment[1]).commit();
-							tv_titles[1].setTextColor(ctx.getResources().getColor(R.color.titlecolor));
+							tv_titles[1].setTextColor(ctx.getResources().getColor(R.color.palevioletred));
 						}
 						if (v.getId() == tv_titles[2].getId()){
 							ctx.getActivity().getSupportFragmentManager().beginTransaction().hide(sonFragment[0]).hide(sonFragment[1])
 							.hide(sonFragment[2]).show(sonFragment[2]).commit();
-							tv_titles[2].setTextColor(ctx.getResources().getColor(R.color.titlecolor));
+							tv_titles[2].setTextColor(ctx.getResources().getColor(R.color.palevioletred));
 						}
 					}
 

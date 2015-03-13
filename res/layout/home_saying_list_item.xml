@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/white" >
+    android:background="@color/linen" >
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -22,10 +22,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
+            android:layout_marginLeft="21dp"
             android:layout_toRightOf="@+id/home_saying_myhead_iv"
-            android:textColor="@color/lightseagreen"
-            android:textSize="@dimen/home_saying_content_size"
-            android:text="content" />
+            android:text="content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/home_saying_content_size" />
         
     </RelativeLayout>
 

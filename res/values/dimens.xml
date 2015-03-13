@@ -6,5 +6,6 @@
     <dimen name="shade_width">10dip</dimen>
     <dimen name="slidingmenu_offset">100dp</dimen>
     <dimen name="home_saying_content_size">20sp</dimen>
+    <dimen name="home_edit_send_text">25sp</dimen>
 
 </resources>
